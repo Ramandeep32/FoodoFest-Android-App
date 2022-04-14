@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E91E63"
+    tools:context=".Signup">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                app:srcCompat="@drawable/logo" />
+            <TextView
+                android:id="@+id/textViewa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="FoodoFest"
+                android:textColor="#FFC107"
+                android:textSize="28sp" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewa"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewa"
+                android:layout_marginTop="30dp"
+                android:text="First Name"
+                android:layout_marginStart="20dp"
+                android:textColor="#213DF3"
+                android:textSize="20sp"
+                tools:ignore="NotSibling" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonNamea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewb"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Firstname"
+                android:minHeight="30dp" />
+
+            <TextView
+                android:id="@+id/textViewc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTextPersonNamea"
+                android:layout_marginTop="30dp"
+                android:text="Last Name"
+                android:layout_marginStart="20dp"
+                android:textColor="#213DF3"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/editTextTextPersonNameb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewc"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Last Name"
+                android:minHeight="30dp" />
+
+
+            <TextView
+                android:id="@+id/textViewd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTextPersonNameb"
+                android:layout_marginTop="30dp"
+                android:text="District"
+                android:layout_marginStart="20dp"
+                android:textColor="#213DF3"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/editTextTextPersonNamec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewd"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="District"
+                android:minHeight="30dp" />
+            <TextView
+                android:id="@+id/textViewe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTextPersonNamec"
+                android:layout_marginTop="30dp"
+                android:text="City"
+                android:layout_marginStart="20dp"
+                android:textColor="#213DF3"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/editTextTextPersonNamed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewe"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="City"
+                android:minHeight="30dp" />
+            <TextView
+                android:id="@+id/textViewf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTextPersonNamed"
+                android:layout_marginTop="30dp"
+                android:text="Complete Address"
+                android:layout_marginStart="20dp"
+                android:textColor="#213DF3"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/editTextTextPersonNamee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewf"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Address"
+                android:minHeight="30dp" />
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTextPersonNamee"
+                android:layout_marginTop="30dp"
+                android:text="Email Id"
+                android:layout_marginStart="20dp"
+                android:textColor="#213DF3"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/signup_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_text"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Email Id"
+                android:minHeight="30dp" />
+            <TextView
+                android:id="@+id/textViewh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_email_id"
+                android:layout_marginTop="30dp"
+                android:text="Password"
+                android:layout_marginStart="20dp"
+                android:textColor="#213DF3"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewh"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Password"
+                android:minHeight="30dp" />
+            <TextView
+                android:id="@+id/textViewi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_password"
+                android:layout_marginTop="30dp"
+                android:text="Confirm Password"
+                android:layout_marginStart="20dp"
+                android:textColor="#213DF3"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewi"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Confirm Password"
+                android:minHeight="30dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/buttona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="20dp"
+                android:text="SIGNUP" />
+
+            <Button
+                android:id="@+id/buttonb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/buttona"
+                android:text="Already an User?" />
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

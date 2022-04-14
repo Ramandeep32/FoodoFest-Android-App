@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "786177503137",
+    "project_id": "foodofest-f8c53",
+    "storage_bucket": "foodofest-f8c53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786177503137:android:59023b1d516e405bffe5e0",
+        "android_client_info": {
+          "package_name": "com.example.foodofest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786177503137-6ba7sa31e5ri0shrabb0q8u9lli9vacu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAFdLR-0-6r-Qj9BG5gI4oVIufC9XsUCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786177503137-6ba7sa31e5ri0shrabb0q8u9lli9vacu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

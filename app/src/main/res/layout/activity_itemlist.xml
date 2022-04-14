@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Itemlist">
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/restauranntdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/restaurantname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Sharma Bojnalaya"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/restauranttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurantname"
+            android:layout_gravity="start"
+            android:text="North Indian"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/restaurantaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restauranttype"
+            android:layout_gravity="start"
+            android:text="Shop1,Near Jawahar Chow Bus Stand,New Market,TT Nagar,Bhopal."
+            android:textColor="@color/gray"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/restauranttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurantaddress"
+            android:layout_gravity="start"
+            android:text="Opening time 10:45am to 11:59pm"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/restaurantimageinlist"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/restauranntdetails"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="10dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/child_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.271">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <Button
+                android:id="@+id/buttonToproceed"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Proceed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/design_button"
+                app:layout_constraintVertical_bias="0.961"
+                 />
+    </LinearLayout>
+
+</LinearLayout>

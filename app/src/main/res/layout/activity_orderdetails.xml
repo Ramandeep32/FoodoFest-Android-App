@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orderdetails"
+    android:background="#E91E63">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/orderdetails"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+    <TextView
+        android:id="@+id/itemvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item Total"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/itemvalue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:id="@+id/tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taxes"
+        android:layout_below="@+id/itemvalue"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/taxcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemvalue2"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+
+            <TextView
+                android:id="@+id/delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tax"
+                android:layout_marginTop="20dp"
+                android:text="Delivery charges"
+                android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/deliverycal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/taxcal"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/discountsetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderdetails"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/discountcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_alignParentRight="true"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please tip your delivery partner"
+                android:layout_below="@+id/discount"
+                android:textSize="17dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/tip15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹15"
+                android:layout_below="@+id/tip"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tipcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_below="@id/discountcal"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:textSize="17dp"/>
+
+            <Button
+                android:id="@+id/tip20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹20"
+                android:layout_below="@+id/tip"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/tip15"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/tip30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹30"
+                android:layout_below="@+id/tip"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/tip20"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/tip50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹50"
+                android:layout_below="@+id/tip"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/tip30"
+                android:layout_marginLeft="10dp"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/grandtotalcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discountsetails"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/grandtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand Total"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/grandtotalcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grandtotalcard"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/paymenttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay using"
+                android:textSize="30dp"/>
+            <RadioGroup
+                android:id="@+id/Radioset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymenttext">
+            <RadioButton
+                android:id="@+id/cod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash on delivery"
+                android:layout_below="@+id/paymenttext"/>
+            <RadioButton
+                android:id="@+id/internatbanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net banking"
+                android:layout_below="@+id/cod"/>
+            <RadioButton
+                android:id="@+id/UPI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI"
+                android:layout_below="@+id/internatbanking"/>
+            <RadioButton
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="card"
+                android:layout_below="@+id/UPI"/>
+            </RadioGroup>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment"
+        android:layout_margin="10dp"
+        android:background="@drawable/design_button"
+        android:text="Place Order"
+        />
+
+
+</RelativeLayout>
